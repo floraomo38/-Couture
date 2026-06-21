@@ -16,7 +16,7 @@ export default function Footer({ onNavigate, openSizingGuide }: FooterProps) {
       {/* Scroll to Top Trigger */}
       <button
         onClick={handleScrollToTop}
-        className="absolute top-0 right-8 -translate-y-1/2 p-3 bg-woven-gold hover:bg-terracotta text-indigo-dye hover:text-white transition-all shadow-lg rounded"
+        className="absolute top-0 right-8 -translate-y-1/2 p-3 bg-woven-gold hover:bg-crimson-coral text-indigo-dye hover:text-white transition-all shadow-lg rounded"
         title="Ascend to peak"
         aria-label="Scroll to top"
       >
@@ -31,14 +31,14 @@ export default function Footer({ onNavigate, openSizingGuide }: FooterProps) {
             <span className="font-display text-3xl font-black text-woven-gold tracking-[0.16em] leading-none uppercase select-none">
               Àṣà
             </span>
-            <span className="text-[10px] font-mono tracking-[0.32em] text-terracotta uppercase font-bold pl-0.5 mt-1">
+            <span className="text-[10px] font-mono tracking-[0.32em] text-crimson-coral uppercase font-bold pl-0.5 mt-1">
               COUTURE
             </span>
           </div>
 
           <p className="text-xs text-ivory/60 leading-relaxed font-sans font-light max-w-sm">
-            High-fashion Nigerian heritage atelier. Handmoulding premium textiles, Double-Warp Aso-Oke, 
-            and historic royal embroideries into masterfully curated custom drapes for global runways.
+            High-fashion Nigerian heritage atelier. Handmoulding premium textiles, Beaded Velvet and Fine Coral, 
+            and historic royal embroideries into drapes for global runways.
           </p>
 
           <div className="flex items-center space-x-3 pt-2" id="footer-social-icons">
@@ -81,7 +81,7 @@ export default function Footer({ onNavigate, openSizingGuide }: FooterProps) {
           <ul className="space-y-2 text-xs text-ivory/60 font-sans list-none pl-0">
             <li>
               <button onClick={() => onNavigate('showcase')} className="hover:text-woven-gold transition-colors">
-                Yoruba Adire & Aṣọ-Ẹbí
+                Edo Velvet Royal Capes
               </button>
             </li>
             <li>
@@ -138,7 +138,7 @@ export default function Footer({ onNavigate, openSizingGuide }: FooterProps) {
           </span>
           <div className="space-y-3 font-sans text-ivory/60">
             <div className="flex items-start gap-1.5">
-              <MapPin size={14} className="text-terracotta shrink-0" />
+              <MapPin size={14} className="text-crimson-coral shrink-0" />
               <div>
                 <span className="text-white block font-semibold text-xs">Ikoyi Showroom</span>
                 <span>44 Alfred Rewane, Ikoyi, Lagos</span>
@@ -165,7 +165,7 @@ export default function Footer({ onNavigate, openSizingGuide }: FooterProps) {
 
         {/* Requested Copyright line in Yoruba, Hausa, and Igbo */}
         <div className="flex items-center space-x-4 font-mono font-bold text-[10px] tracking-wider text-woven-gold" id="multilingual-disclaimer">
-          <span className="px-2 py-0.5 border border-white/5 rounded">Àṣà (Yoruba)</span>
+          <span className="px-2 py-0.5 border border-white/5 rounded">Àṣà (Edo)</span>
           <span>|</span>
           <span className="px-2 py-0.5 border border-white/5 rounded">Al'ada (Hausa)</span>
           <span>|</span>

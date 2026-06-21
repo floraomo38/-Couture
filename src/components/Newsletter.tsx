@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Mail, Sparkles, BookOpen, X, CheckCircle } from 'lucide-react';
 
 const CULTURAL_TRIVIA = [
   {
-    culture: 'Yoruba',
-    fact: 'The "Gele" headtie is not just a decorative item; its height and slant can convey a woman s marital status. A Gele turned to the right side indicates she is happily married, while a Gele tilted to the left shows she is still searching for a soulmate.'
+    culture: 'Edo',
+    fact: 'Edo coral beads (Ivie) represent status and royalty. The weight, color, and size of the beads are traditionally granted by the Oba of Benin, signifying distinct ranks of chieftaincy and royal lineage.'
   },
   {
     culture: 'Hausa',

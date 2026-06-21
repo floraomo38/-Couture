@@ -59,8 +59,8 @@ export default function OccasionTabs() {
             {/* Guide descriptive block */}
             <div className="lg:col-span-4 bg-[#19113E] p-6 md:p-8 rounded-xl border border-white/5 flex flex-col justify-between space-y-6">
               <div className="space-y-4">
-                <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-terracotta font-extrabold flex items-center gap-1.5ClassName">
-                  <Sparkles size={12} className="text-terracotta" /> Core Formula
+                <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-crimson-coral font-extrabold flex items-center gap-1.5">
+                  <Sparkles size={12} className="text-crimson-coral" /> Core Formula
                 </span>
                 <h3 className="font-display text-2xl font-bold text-white uppercase tracking-wide">
                   {currentGuide.name} Protocol
@@ -85,18 +85,18 @@ export default function OccasionTabs() {
             {/* Custom culture style formulas */}
             <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-4">
               
-              {/* Yoruba Culture column panel */}
-              <div className="bg-[#19113E]/50 rounded-xl p-6 border-l-4 border-terracotta border-y border-r border-[#19113E] hover:bg-[#19113E] transition-all space-y-4">
+              {/* Edo Culture column panel */}
+              <div className="bg-[#19113E]/50 rounded-xl p-6 border-l-4 border-crimson-coral border-y border-r border-[#19113E] hover:bg-[#19113E] transition-all space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="font-display font-medium text-lg text-white">Yoruba Style</span>
-                  <span className="text-[9px] font-mono bg-terracotta/25 text-terracotta px-2 py-0.5 rounded uppercase">Terracotta Accent</span>
+                  <span className="font-display font-medium text-lg text-white">Edo Style</span>
+                  <span className="text-[9px] font-mono bg-crimson-coral/25 text-crimson-coral px-2 py-0.5 rounded uppercase">Coral Accent</span>
                 </div>
                 <div className="text-xs text-ivory/75 font-sans leading-relaxed space-y-3">
-                  <p>{currentGuide.yorubaStyle}</p>
+                  <p>{currentGuide.edoStyle}</p>
                   <div className="pt-2 border-t border-white/5 space-y-1 text-[11px] text-ivory/50">
                     <span className="font-mono text-[9px] uppercase tracking-wider text-woven-gold font-bold block">Key Garments</span>
-                    <div className="flex items-center gap-1"><Check size={11} className="text-terracotta" /> Agbada / Alari fabrics</div>
-                    <div className="flex items-center gap-1"><Check size={11} className="text-terracotta" /> Pre-shuffled Gele Ties</div>
+                    <div className="flex items-center gap-1"><Check size={11} className="text-crimson-coral" /> Ewu-Ivie & Igbulu</div>
+                    <div className="flex items-center gap-1"><Check size={11} className="text-crimson-coral" /> Okuku Coral Crowns</div>
                   </div>
                 </div>
               </div>

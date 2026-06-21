@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
-import { Award, Hammer, Users3, Sparkles } from 'lucide-react';
+import { Award, Hammer, Sparkles } from 'lucide-react';
 
 export default function StorySection() {
   return (
     <section className="py-20 md:py-28 px-4 lg:px-8 bg-[#130B30] text-ivory/90 border-b border-woven-gold/10 relative overflow-hidden" id="story">
       {/* Structural background details */}
-      <div className="absolute right-0 top-0 w-80 h-80 bg-terracotta/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute right-0 top-0 w-80 h-80 bg-crimson-coral/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute left-0 bottom-0 w-80 h-80 bg-woven-gold/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -16,14 +16,14 @@ export default function StorySection() {
             <span className="text-[10px] font-mono tracking-[0.25em] text-woven-gold uppercase font-bold block">
               Craftsmanship Philosophy
             </span>
-            <div className="relative pl-6 border-l-4 border-terracotta py-2">
-              <span className="absolute -left-2 -top-4 text-7xl font-serif text-terracotta/15 select-none font-black">“</span>
+            <div className="relative pl-6 border-l-4 border-crimson-coral py-2">
+              <span className="absolute -left-2 -top-4 text-7xl font-serif text-crimson-coral/15 select-none font-black">“</span>
               <p className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight uppercase tracking-tight">
                 Every stitch is a sentence in a story passed down through generations.
               </p>
             </div>
-            <p className="text-xs font-mono text-terracotta/80 pl-6">
-              — Àṣà Couture Loom Weaver Guild, Oyo State
+            <p className="text-xs font-mono text-crimson-coral/80 pl-6">
+              — Àṣà Couture Bead Guild, Edo State
             </p>
           </div>
 
@@ -31,7 +31,7 @@ export default function StorySection() {
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-white/5 shadow-xl group">
             <img
               src="/src/assets/images/craftsmanship_texture_1781348686728.jpg"
-              alt="High close up of loomed terracotta and gold thread fabric"
+              alt="High close up of crimson velvet and coral beaded fabric"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
@@ -53,7 +53,7 @@ export default function StorySection() {
             </div>
             
             <div className="text-center space-y-1 border-x border-woven-gold/10 px-2">
-              <span className="font-display text-3xl md:text-4xl font-extrabold text-terracotta block tracking-tighter">
+              <span className="font-display text-3xl md:text-4xl font-extrabold text-crimson-coral block tracking-tighter">
                 30+
               </span>
               <span className="text-[10px] font-mono uppercase tracking-[0.05em] text-ivory/50 block">
@@ -84,21 +84,21 @@ export default function StorySection() {
 
             <p>
               Traditional West African looms are not simply mechanical devices; they are calculating instruments. For example, the 
-              Yoruba <strong>Aṣọ-Oke</strong> double-warp method requires weavers to shuttle raw silken threads across wooden blocks up to 
+              Edo <strong>Ivie</strong> beaded cap method requires artisans to lock-stitch raw coral heads onto velvet fabrics up to 
               hundreds of times to complete a single standard wrap band. Every diamond motif holds a historical lineage, representing 
               marriage coordinates, noble community appointments, or seasonal harvests.
             </p>
 
             <p>
               At Àṣà Couture, we do not automate this mathematics. We partner directly with family weaving co-operatives in 
-              <strong> Oyo</strong> (Yoruba Aṣọ-Oke), <strong>Kano</strong> (Hausa fine embroidery guilds), and <strong>Aba</strong> (Igbo George wrapping houses). 
+              <strong> Benin City</strong> (Edo Coral Weaving), <strong>Kano</strong> (Hausa fine embroidery guilds), and <strong>Aba</strong> (Igbo George wrapping houses). 
               By employing second and third-generation master artisans, we ensure these mathematical textile formulas remain economically 
               viable on the modern luxury market.
             </p>
 
             <p>
               We dye our threads using natural, slow-curing components. Our rich deep blue is extracted from indigenous 
-              <strong> Indigofera</strong> mud blocks in traditional clay pits, our warm burnt terracotta is sourced from mineral-dense red clay soil coordinates, 
+              <strong> Indigofera</strong> mud blocks in traditional clay pits, our royal crimson is extracted from rich hibiscus juices and natural dyes, 
               and our forest greens are boiled from indigenous teak bark. The resulting fiber absorbs light with an unmatched organic depth, 
               ensuring your couture garment shimmers beautifully under any grand occasion lighting.
             </p>
@@ -119,7 +119,7 @@ export default function StorySection() {
             </div>
 
             <div className="bg-[#19113E] p-5 rounded-lg border border-white/5 space-y-2">
-              <div className="w-8 h-8 rounded-full bg-terracotta/10 flex items-center justify-center text-terracotta">
+              <div className="w-8 h-8 rounded-full bg-crimson-coral/10 flex items-center justify-center text-crimson-coral">
                 <Hammer size={16} />
               </div>
               <h4 className="font-display text-base font-bold text-white uppercase tracking-wide">

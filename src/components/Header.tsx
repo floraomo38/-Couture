@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Heart, ShoppingBag, Menu, X, Search, ChevronRight, Share2, Compass } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Product } from '../data';
@@ -55,7 +55,7 @@ export default function Header({
     if (navigator.share) {
       navigator.share({
         title: 'Àṣà Couture',
-        text: 'African Heritage Haute Couture celebrating Yoruba, Hausa, & Igbo textile traditions.',
+        text: 'African Heritage Haute Couture celebrating Edo, Hausa, & Igbo textile traditions.',
         url: window.location.href,
       }).catch(console.error);
     } else {
@@ -78,7 +78,7 @@ export default function Header({
             <h1 className="font-display text-2xl lg:text-3xl font-extrabold tracking-[0.18em] text-woven-gold uppercase transition-colors group-hover:text-ivory leading-none">
               Àṣà
             </h1>
-            <span className="text-[9px] font-mono tracking-[0.35em] text-terracotta uppercase font-bold pl-0.5 mt-1">
+            <span className="text-[9px] font-mono tracking-[0.35em] text-crimson-coral uppercase font-bold pl-0.5 mt-1">
               COUTURE
             </span>
           </div>
@@ -145,12 +145,12 @@ export default function Header({
             {/* Wishlist Hearts Toggle */}
             <button
               onClick={() => setIsWishlistDrawerOpen(true)}
-              className="p-1.5 rounded-full hover:bg-white/5 text-ivory/90 hover:text-terracotta transition-colors relative"
+              className="p-1.5 rounded-full hover:bg-white/5 text-ivory/90 hover:text-crimson-coral transition-colors relative"
               aria-label="Wishlist items"
             >
-              <Heart size={20} className={wishlist.length > 0 ? 'fill-terracotta text-terracotta' : ''} />
+              <Heart size={20} className={wishlist.length > 0 ? 'fill-crimson-coral text-crimson-coral' : ''} />
               {wishlist.length > 0 && (
-                <span className="absolute -top-1 -right-1 bg-terracotta text-ivory text-[10px] w-4.5 h-4.5 rounded-full flex items-center justify-center font-mono font-bold">
+                <span className="absolute -top-1 -right-1 bg-crimson-coral text-ivory text-[10px] w-4.5 h-4.5 rounded-full flex items-center justify-center font-mono font-bold">
                   {wishlist.length}
                 </span>
               )}
@@ -242,7 +242,7 @@ export default function Header({
                       <div className="flex-1">
                         <div className="flex items-center space-x-2">
                           <span className={`text-[10px] uppercase tracking-wider font-mono px-2 py-0.5 rounded-full font-semibold ${
-                            prod.culture === 'Yoruba' ? 'bg-terracotta/20 text-terracotta' :
+                            prod.culture === 'Edo' ? 'bg-crimson-coral/20 text-crimson-coral' :
                             prod.culture === 'Hausa' ? 'bg-woven-gold/20 text-woven-gold' : 'bg-forest-green/20 text-forest-green'
                           }`}>
                             {prod.culture}
@@ -261,7 +261,7 @@ export default function Header({
                 {!searchQuery && (
                   <div className="flex flex-col items-center justify-center py-12 text-center text-ivory/40">
                     <Compass className="text-woven-gold/40 mb-3 animate-pulse" size={36} />
-                    <p className="text-sm">Try searching "Yoruba", "Isiagu", "Silk", "George", or "Agbada"</p>
+                    <p className="text-sm">Try searching "Edo", "Isiagu", "Silk", "George", or "Velvet"</p>
                   </div>
                 )}
               </div>
@@ -294,7 +294,7 @@ export default function Header({
                 >
                   <div className="p-6 border-b border-woven-gold/10 flex items-center justify-between">
                     <span className="flex items-center text-woven-gold font-display font-medium text-lg uppercase tracking-wider gap-2">
-                      <Heart className="fill-terracotta text-terracotta" size={18} />
+                      <Heart className="fill-crimson-coral text-crimson-coral" size={18} />
                       Your Collections Wishlist
                     </span>
                     <button
@@ -347,7 +347,7 @@ export default function Header({
                               {item.name}
                             </h4>
                             <p className="text-xs text-ivory/50 truncate mb-1">{item.fabricType}</p>
-                            <span className="font-mono text-terracotta text-sm font-semibold">₦{item.price.toLocaleString()}</span>
+                            <span className="font-mono text-crimson-coral text-sm font-semibold">₦{item.price.toLocaleString()}</span>
                           </div>
                           <div className="flex flex-col space-y-2">
                             <button
@@ -361,7 +361,7 @@ export default function Header({
                             </button>
                             <button
                               onClick={() => removeFromWishlist(item)}
-                              className="text-[10px] text-ivory/40 hover:text-terracotta uppercase tracking-[0.05em] font-mono transition-colors"
+                              className="text-[10px] text-ivory/40 hover:text-crimson-coral uppercase tracking-[0.05em] font-mono transition-colors"
                             >
                               Remove
                             </button>
@@ -401,7 +401,7 @@ export default function Header({
                 <div className="flex items-center justify-between border-b border-woven-gold/10 pb-4 mb-8">
                   <div className="flex flex-col">
                     <span className="font-display text-2xl font-black text-woven-gold tracking-widest leading-none">ÀṢÀ</span>
-                    <span className="text-[8px] font-mono tracking-[0.3em] text-terracotta uppercase font-bold mt-1">COUTURE</span>
+                    <span className="text-[8px] font-mono tracking-[0.3em] text-crimson-coral uppercase font-bold mt-1">COUTURE</span>
                   </div>
                   <button onClick={() => setIsMobileMenuOpen(false)} className="text-ivory/80 hover:text-woven-gold">
                     <X size={22} />
@@ -448,8 +448,8 @@ export default function Header({
                 <p className="text-xs text-ivory/60 leading-relaxed font-sans">
                   "Àṣà Couture translates generations of loom-shuttling intelligence to modern runways."
                 </p>
-                <div className="flex justify-between items-center text-[10px] font-mono text-terracotta pt-2">
-                  <span>Àṣà (Yoruba)</span>
+                <div className="flex justify-between items-center text-[10px] font-mono text-crimson-coral pt-2">
+                  <span>Àṣà (Edo)</span>
                   <span>Al'ada (Hausa)</span>
                   <span>Omenala (Igbo)</span>
                 </div>

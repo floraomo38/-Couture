@@ -1,3 +1,4 @@
+import React from 'react';
 import { Heart, ZoomIn, Eye, ShoppingBag } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Product } from '../data';
@@ -31,7 +32,7 @@ export default function ProductCard({
         {/* Culture Tag Overlay */}
         <div className="absolute top-3 left-3 z-10" id={`prod-badge-${product.id}`}>
           <span className={`text-[9px] font-mono tracking-widest font-extrabold px-3 py-1 uppercase rounded-full shadow-md ${
-            product.culture === 'Yoruba' ? 'bg-terracotta text-ivory border border-terracotta/30' :
+            product.culture === 'Edo' ? 'bg-crimson-coral text-ivory border border-crimson-coral/30' :
             product.culture === 'Hausa' ? 'bg-woven-gold text-indigo-dye border border-woven-gold/30' :
             'bg-forest-green text-ivory border border-forest-green/30'
           }`}>
@@ -45,13 +46,13 @@ export default function ProductCard({
             e.stopPropagation();
             onToggleWishlist();
           }}
-          className="absolute top-3 right-3 z-10 p-2 rounded-full bg-indigo-dye/80 backdrop-blur-md border border-white/10 hover:border-terracotta/40 text-ivory/60 hover:text-terracotta transition-all shadow-md hover:scale-105 active:scale-90"
+          className="absolute top-3 right-3 z-10 p-2 rounded-full bg-indigo-dye/80 backdrop-blur-md border border-white/10 hover:border-crimson-coral/40 text-ivory/60 hover:text-crimson-coral transition-all shadow-md hover:scale-105 active:scale-90"
           aria-label={isWishlisted ? "Remove from wardrobe curator" : "Add to wardrobe curator"}
           id={`wishlist-trigger-${product.id}`}
         >
           <Heart
             size={16}
-            className={`transition-colors ${isWishlisted ? 'fill-terracotta text-terracotta' : 'text-ivory'}`}
+            className={`transition-colors ${isWishlisted ? 'fill-crimson-coral text-crimson-coral' : 'text-ivory'}`}
           />
         </button>
 
@@ -83,7 +84,7 @@ export default function ProductCard({
               e.stopPropagation();
               onAddToCart();
             }}
-            className="p-3 rounded-full bg-terracotta text-ivory hover:bg-woven-gold hover:text-indigo-dye transition-colors pointer-all shadow-lg active:scale-95 flex items-center justify-center"
+            className="p-3 rounded-full bg-crimson-coral text-ivory hover:bg-woven-gold hover:text-indigo-dye transition-colors pointer-all shadow-lg active:scale-95 flex items-center justify-center"
             title="Add to bespoke parcel"
             id={`add-parcel-${product.id}`}
           >

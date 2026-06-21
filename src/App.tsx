@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ShoppingBag, X, Check, Heart, HelpCircle, ArrowRight, Sparkles, AlertCircle } from 'lucide-react';
 import { PRODUCTS, CULTURE_SHOWCASE, Product } from './data';
@@ -34,7 +34,7 @@ export default function App() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isSizingGuideOpen, setIsSizingGuideOpen] = useState(false);
-  const [cultureFilter, setCultureFilter] = useState<'All' | 'Yoruba' | 'Hausa' | 'Igbo'>('All');
+  const [cultureFilter, setCultureFilter] = useState<'All' | 'Edo' | 'Hausa' | 'Igbo'>('All');
   
   // Commission Checkout Form States
   const [isCheckoutModelOpen, setIsCheckoutModelOpen] = useState(false);
@@ -240,7 +240,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto space-y-12">
           
           <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="text-xs font-mono tracking-[0.3em] text-terracotta uppercase font-bold block">
+            <span className="text-xs font-mono tracking-[0.3em] text-crimson-coral uppercase font-bold block">
               The Three Lineages
             </span>
             <h2 className="font-display text-3xl md:text-5xl font-extrabold text-white tracking-tight uppercase">
@@ -248,7 +248,7 @@ export default function App() {
             </h2>
             <p className="text-sm text-ivory/60 leading-relaxed font-light">
               Explore the distinct weaving methodologies, majestic headwear etiquette, and socio-philosophical weights that 
-              define Yoruba, Hausa, and Igbo fashion architecture.
+              define Edo, Hausa, and Igbo fashion architecture.
             </p>
           </div>
 
@@ -290,7 +290,7 @@ export default function App() {
 
             {/* Showcase filter tabs */}
             <div className="flex flex-wrap items-center gap-2 bg-indigo-dye/30 p-1 border border-white/5 rounded" id="culture-pills-filter">
-              {(['All', 'Yoruba', 'Hausa', 'Igbo'] as const).map((filter) => (
+              {(['All', 'Edo', 'Hausa', 'Igbo'] as const).map((filter) => (
                 <button
                   key={filter}
                   onClick={() => setCultureFilter(filter)}

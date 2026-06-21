@@ -17,7 +17,7 @@ export default function Hero({ onExploreCollections, onExploreHeritage }: HeroPr
           <defs>
             <pattern id="gridPattern" width="60" height="60" patternUnits="userSpaceOnUse">
               <path d="M 30 0 L 60 30 L 30 60 L 0 30 Z" fill="none" stroke="#D4A843" strokeWidth="1" />
-              <circle cx="30" cy="30" r="1.5" fill="#C4581F" />
+              <circle cx="30" cy="30" r="1.5" fill="#9B111E" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#gridPattern)" />
@@ -25,7 +25,7 @@ export default function Hero({ onExploreCollections, onExploreHeritage }: HeroPr
       </div>
 
       {/* Floating Ambient Glow circles */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-terracotta/10 blur-3xl z-0 pointer-events-none animate-pulse" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-crimson-coral/10 blur-3xl z-0 pointer-events-none animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-forest-green/10 blur-3xl z-0 pointer-events-none animate-pulse" />
 
       {/* Hero Structure Container */}
@@ -54,8 +54,8 @@ export default function Hero({ onExploreCollections, onExploreHeritage }: HeroPr
             className="space-y-4"
           >
             <h2 className="font-display text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-white leading-none">
-              Wear Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-woven-gold via-terracotta to-woven-gold">Roots</span>. <br />
-              Own Your <span className="text-white border-b-2 border-terracotta">Story</span>.
+              Wear Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-woven-gold via-crimson-coral to-woven-gold">Roots</span>. <br />
+              Own Your <span className="text-white border-b-2 border-crimson-coral">Story</span>.
             </h2>
           </motion.div>
 
@@ -66,7 +66,7 @@ export default function Hero({ onExploreCollections, onExploreHeritage }: HeroPr
             className="font-sans text-base sm:text-lg text-ivory/80 max-w-xl leading-relaxed font-light"
           >
             Àṣà Couture translates the mathematical grandeur of Nigerian textile history to the global luxury stage. 
-            We weave the royal lineages of Yoruba <span className="text-terracotta font-semibold">Aṣọ-Oke</span>, Hausa <span className="text-woven-gold font-semibold">Brocade</span>, and Igbo <span className="text-forest-green font-semibold">Isiagu</span> velvet into modern museum-grade garments.
+            We weave the royal lineages of Edo <span className="text-crimson-coral font-semibold">Ivie Velvet</span>, Hausa <span className="text-woven-gold font-semibold">Brocade</span>, and Igbo <span className="text-forest-green font-semibold">Isiagu</span> velvet into modern museum-grade garments.
           </motion.p>
 
           <motion.div
@@ -78,7 +78,7 @@ export default function Hero({ onExploreCollections, onExploreHeritage }: HeroPr
           >
             <button
               onClick={onExploreCollections}
-              className="px-8 py-4 bg-gradient-to-r from-terracotta to-[#a3410e] text-ivory text-xs font-mono tracking-widest uppercase hover:opacity-90 active:scale-95 transition-all duration-300 font-bold flex items-center justify-center gap-2 group shadow-xl"
+              className="px-8 py-4 bg-gradient-to-r from-crimson-coral to-[#800d17] text-ivory text-xs font-mono tracking-widest uppercase hover:opacity-90 active:scale-95 transition-all duration-300 font-bold flex items-center justify-center gap-2 group shadow-xl"
               id="cta-explore"
             >
               Explore Collections
@@ -106,7 +106,7 @@ export default function Hero({ onExploreCollections, onExploreHeritage }: HeroPr
               <ShieldCheck size={14} className="text-woven-gold" /> Traditional Loom-Weaving
             </span>
             <span className="flex items-center gap-1.5">
-              <MapPin size={14} className="text-terracotta" /> Sourced from Nigerian Artisans
+              <MapPin size={14} className="text-crimson-coral" /> Sourced from Nigerian Artisans
             </span>
           </motion.div>
 
@@ -120,7 +120,7 @@ export default function Hero({ onExploreCollections, onExploreHeritage }: HeroPr
           className="lg:col-span-5 relative w-full aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-lg overflow-hidden border border-woven-gold/25 shadow-2xl group flex items-center justify-center"
           id="hero-media-frame"
         >
-          {/* Decorative Corner borders evoking Yoruba woven geometric boxes */}
+          {/* Decorative Corner borders evoking royal Benin geometric boxes */}
           <div className="absolute top-4 left-4 w-6 h-6 border-t-2 border-l-2 border-woven-gold/60 z-20 pointer-events-none" />
           <div className="absolute top-4 right-4 w-6 h-6 border-t-2 border-r-2 border-woven-gold/60 z-20 pointer-events-none" />
           <div className="absolute bottom-4 left-4 w-6 h-6 border-b-2 border-l-2 border-woven-gold/60 z-20 pointer-events-none" />
@@ -144,9 +144,9 @@ export default function Hero({ onExploreCollections, onExploreHeritage }: HeroPr
           <div className="absolute bottom-6 left-6 right-6 z-20 bg-indigo-dye/80 backdrop-blur-md p-4 rounded border border-woven-gold/20 flex items-center justify-between">
             <div>
               <p className="text-[10px] font-mono text-woven-gold tracking-wider uppercase font-semibold">Exhibition Piece</p>
-              <h5 className="font-display text-sm font-bold text-white tracking-wide">Grand Union Oba Agbada Hybrid</h5>
+              <h5 className="font-display text-sm font-bold text-white tracking-wide">Grand Oba Velvet Cape Hybrid</h5>
             </div>
-            <span className="text-xs bg-terracotta text-ivory px-2.5 py-1 font-mono rounded">₦1,250,000</span>
+            <span className="text-xs bg-crimson-coral text-ivory px-2.5 py-1 font-mono rounded">₦1,250,000</span>
           </div>
         </motion.div>
 

@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronRight, ArrowUpRight, BookOpen, Sparkles } from 'lucide-react';
 import { CultureShowcase } from '../data';
 
 interface CultureCardProps {
   culture: CultureShowcase;
-  onFilterSelect: (cultureName: 'Yoruba' | 'Hausa' | 'Igbo') => void;
+  onFilterSelect: (cultureName: 'Edo' | 'Hausa' | 'Igbo') => void;
 }
 
 export default function CultureCard({ culture, onFilterSelect }: CultureCardProps) {

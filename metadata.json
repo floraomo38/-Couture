@@ -1,6 +1,6 @@
 {
   "name": "Àṣà Couture",
-  "description": "Premium African fashion house celebrating the textile heritage of Nigeria's three major cultures: Yoruba, Hausa, and Igbo.",
+  "description": "Premium African fashion house celebrating the textile heritage of Nigeria's three major cultures: Edo, Hausa, and Igbo.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

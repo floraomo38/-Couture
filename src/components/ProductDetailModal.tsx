@@ -34,7 +34,7 @@ export default function ProductDetailModal({
   if (!product || !isOpen) return null;
 
   // Compute estimated crafting stats based on custom measurements or standard weight
-  const fabricComplexity = product.culture === 'Yoruba' ? 1.3 : product.culture === 'Hausa' ? 1.1 : 1.2;
+  const fabricComplexity = product.culture === 'Edo' ? 1.3 : product.culture === 'Hausa' ? 1.1 : 1.2;
   const areaMultiplier = sizeMode === 'custom' 
     ? (chest * shoulder * length) / 30000 
     : selectedStandardSize === 'S' ? 0.9 : selectedStandardSize === 'M' ? 1.0 : selectedStandardSize === 'L' ? 1.1 : 1.25;
@@ -124,7 +124,7 @@ export default function ProductDetailModal({
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <span className={`text-[10px] font-mono tracking-widest uppercase px-2.5 py-0.5 rounded-full font-bold ${
-                  product.culture === 'Yoruba' ? 'bg-terracotta/20 text-terracotta' :
+                  product.culture === 'Edo' ? 'bg-crimson-coral/20 text-crimson-coral' :
                   product.culture === 'Hausa' ? 'bg-woven-gold/20 text-woven-gold' :
                   'bg-forest-green/20 text-forest-green'
                 }`}>
@@ -245,7 +245,7 @@ export default function ProductDetailModal({
                       />
                     </div>
 
-                    {/* Agbada length input */}
+                    {/* Cape length input */}
                     <div className="space-y-1">
                       <div className="flex justify-between font-mono text-[10px] text-ivory/60">
                         <span>Loom Length</span>
@@ -274,10 +274,10 @@ export default function ProductDetailModal({
             <div className="mt-6 pt-4 border-t border-white/10 flex items-center gap-3">
               <button
                 onClick={onToggleWishlist}
-                className="p-3.5 rounded border border-white/10 hover:border-terracotta text-ivory/80 hover:text-terracotta transition-colors bg-white/2"
+                className="p-3.5 rounded border border-white/10 hover:border-crimson-coral text-ivory/80 hover:text-crimson-coral transition-colors bg-white/2"
                 aria-label="Add item to wishlist drawer"
               >
-                <Heart size={18} className={isWishlisted ? 'fill-terracotta text-terracotta' : ''} />
+                <Heart size={18} className={isWishlisted ? 'fill-crimson-coral text-crimson-coral' : ''} />
               </button>
 
               <button
@@ -286,7 +286,7 @@ export default function ProductDetailModal({
                 className={`flex-1 p-3.5 text-xs font-mono tracking-widest font-extrabold uppercase rounded shadow-xl transition-all duration-300 flex items-center justify-center gap-2 ${
                   isOrdered 
                     ? 'bg-forest-green text-ivory' 
-                    : 'bg-gradient-to-r from-woven-gold to-terracotta hover:opacity-90 active:scale-95 text-indigo-dye'
+                    : 'bg-gradient-to-r from-woven-gold to-crimson-coral hover:opacity-90 active:scale-95 text-indigo-dye'
                 }`}
               >
                 {isOrdered ? (
